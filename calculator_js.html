@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title> My Calculator Assignment  and JS </title>
+
+	</head>
+			<style type="text/css">
+		#calculator-holder {
+			position: relative;
+			width: 350px;
+			border: 2px solid Pink;
+			border-radius: 4px;
+			background-color: purple;
+
+		}
+		input[type=button]{
+			background-color: Pink;
+			width: 18%;
+			font-size: 20px;
+			font-weight: 500;
+			font-family: verdana;
+			margin: 3%;
+			border-radius: 5px;
+			}
+		input[type=text]{
+			position: relative;
+			display: block;
+			margin: 7px auto;
+			font-size: 30px;
+			width: 90%;
+
+
+		}
+
+
+
+		</style>
+	
+	<body>
+		<div id="calculator-holder"> 
+		<form name="calculator">
+			<input type="text" name= "result">
+			<br>
+			<input type="button" name= "1" value=" 1 " onclick="run1()"> 
+			<input type="button" name= "2" value=" 2 " onclick="run2()"> 
+			<input type="button" name= "3" value=" 3 " onclick="run3()"> 
+			<input type="button" name= "add" value=" + " onclick="runadd()"> 
+			<br>
+			<input type="button" name= "4" value=" 4 " onclick="run4()"> 
+			<input type="button" name= "5" value=" 5 " onclick="run5()"> 
+			<input type="button" name= "6" value=" 6 " onclick="run6()"> 
+			<input type="button" name= "minus" value=" - " onclick="runminus()"> 
+			<br>
+			<input type="button" name= "7" value=" 7 " onclick="run7()"> 
+			<input type="button" name= "8" value=" 8 " onclick="run8()"> 
+			<input type="button" name= "9" value=" 9 " onclick="run9()"> 
+			<input type="button" name= "divide" value=" / " onclick="rundivide()"> 
+			<br>
+			<input type="button" name= "0" value=" 0 " onclick="run0()"> 
+			<input type="button" name= "dot" value=" . " onclick="rundot()"> 
+			<input type="button" name= "times" value=" * " onclick="runtimes()"> 
+			<input type="button" name= "calc" value=" = " onclick="calculation()"> 
+			<br>
+			<input type="button" name= "clear" value=" C " onclick="runclear()"> 
+			<input type="button" name= "plusminus" value=" +/- " onclick="runminus()"> 
+			<input type="button" name= "square" value=" ^ " onclick="runsqr()"> 
+			<input type="button" name= "sqrt" value=" sqrt " onclick="runsqrt()"> 
+
+			
+		
+		</form>
+		</div>
+
+		<script type="text/javascript">
+
+		function run1 ( ) {
+			document.calculator.result.value += "1" ;
+		}
+
+		function run2 ( ) {
+			document.calculator.result.value += "2" ;	
+		}
+
+		function run3 ( ) {
+			document.calculator.result.value += "3" ;	
+		}
+
+		function runadd ( ) {
+			document.calculator.result.value += "+" ;
+					}
+
+		function calculation()
+			{
+				var calculation = eval(document.calculator.result.value)
+				document.calculator.result.value = calculation;
+			}
+
+			function run4 ( ) {
+			document.calculator.result.value += "4" ;
+			
+		}
+
+		function run5 ( ) {
+			document.calculator.result.value += "5" ;
+			
+		}
+
+		function run6 ( ) {
+			document.calculator.result.value += "6" ;
+			
+		}
+
+		function runminus ( ) {
+			document.calculator.result.value += "-" ;
+					}
+
+			function run7 ( ) {
+			document.calculator.result.value += "7" ;
+			
+		}
+
+		function run8 ( ) {
+			document.calculator.result.value += "8" ;
+			
+		}
+
+		function run9 ( ) {
+			document.calculator.result.value += "9" ;
+			
+		}
+
+		function rundivide ( ) {
+			document.calculator.result.value += "/" ;
+					}
+
+			
+			function run0 ( ) {
+			document.calculator.result.value += "0" ;
+			
+		}
+
+		function rundot ( ) {
+			document.calculator.result.value += "." ;
+			
+		}
+
+		function runtimes ( ) {
+			document.calculator.result.value += "*" ;
+			
+		}
+
+		function runclear ( ) {
+			document.calculator.result.value = " " ;
+			
+		}
+
+		function runsqr ( ) {
+			var runsqr = eval(document.calculator.result.value*document.calculator.result.value)
+			document.calculator.result.value = runsqr ;
+					}
+					function runsqrt ( ) {
+				var runsqrt = Math.sqrt(document.calculator.result.value);	 
+			document.calculator.result.value = runsqrt ;
+					}
+
+		</script>
+		
+
+	</body>
+</html>
