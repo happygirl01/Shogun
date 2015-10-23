@@ -84,10 +84,10 @@
 		function runsqr ( ) {
 			var runsqr = eval(document.calculator.result.value*document.calculator.result.value)
 			document.calculator.result.value = runsqr ;
-					}
+		}
 					function runsqrt ( ) {
 				var runsqrt = Math.sqrt(document.calculator.result.value);	 
 			document.calculator.result.value = runsqrt ;
-					}
+		}
 
 	
